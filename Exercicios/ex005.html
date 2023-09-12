@@ -17,9 +17,15 @@
     <h1>Aprendendo DOM</h1>
     <p>Aqui o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <script>
+        window.document.write(window.document.URL)
+    </script>
     <div>Clique Aqui</div>
     <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
 
+        window.document.write(p1.innerText)
+        p1.style.color = 'blue'
     </script>
 </body>
 </html>
